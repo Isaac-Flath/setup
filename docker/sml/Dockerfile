@@ -1,6 +1,6 @@
 # docker pull ubuntu:18.04
 # docker build -t sml -f ./docker/sml/Dockerfile --no-cache ./
-# docker run -it -v ~/docker_files/:/ds -p 8890:8890 sml
+# docker run -it -v ~/docker_files/:/ds sml
 
 
 FROM ubuntu
@@ -28,4 +28,3 @@ ENV SHELL=/bin/bash
 VOLUME /ds
 WORKDIR /ds
 CMD ["emacs"]
-#CMD ["/bin/bash"]
